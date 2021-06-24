@@ -7,3 +7,18 @@ before_install:
 
 script:
   - docker run jmbau/docker-rea npm run test -- --coverage
+
+deploy:
+  provider: elasticbeanstalk
+  region: "us-east-2"
+  app: "Thistalk"
+  env: "Thistalk-env"
+  bucket_name: "elasticbeanstalk-us-east-2-975845124120"
+  bucket_path: "Thistalk"
+  on:
+    branch: master
+  access_key_id: "$keys"
+  secret_access_key:
+    secure: "$aws_secretkey"
+    
+
