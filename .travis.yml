@@ -5,9 +5,6 @@ services:
 before_install:
   - docker build -t jmbau/docker-rea .
 
-script:
-  - docker run jmbau/docker-rea npm run test -- --coverage
-
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
