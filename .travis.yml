@@ -21,8 +21,8 @@ deploy:
   bucket_path: "Thistalk"
   on:
     branch: master
-  access_key_id: "$keys"
+  access_key_id: "$AccesskeyID"
   secret_access_key:
-    secure: "$aws_secretkey"
+    secure: "$Secretaccesskey"
     
 
