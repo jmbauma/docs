@@ -7,7 +7,7 @@ services:
   - docker
 
 before_install:
-  - docker build -t jmbau/docker-rea -f Dockerfile.dev .
+  - docker build -t jmbau/docker-rea -f Dockerfile .
 
 script:
   - docker npm test jmbau/docker-rea -- --coverage
