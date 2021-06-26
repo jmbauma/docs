@@ -10,7 +10,7 @@ before_install:
   - docker build -t jmbau -f Dockerfile.dev .
 
 script:
-  - docker run jmbau CI=true npm test
+  - docker CI=true run jmbau npm test
 
 deploy:
   provider: elasticbeanstalk
