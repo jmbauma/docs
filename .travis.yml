@@ -1,7 +1,7 @@
 sudo: required
 language: node_js
 node_js:
-  - 7
+  - "7"
 
 services:
   - docker
@@ -10,7 +10,7 @@ before_install:
   - docker build -t jmbau/docker-rea -f Dockerfile.dev .
 
 script:
-  - docker npm test jmbau/docker-rea -- --coverage
+  - docker run jmbau/docker-rea npm run test -- --coverage
 
 deploy:
   provider: elasticbeanstalk
