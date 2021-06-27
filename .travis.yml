@@ -13,10 +13,10 @@ script:
 deploy:
   provider: elasticbeanstalk
   region: "us-east-2"
-  app: "Thistalk"
-  env: "Thistalk-env"
+  app: "frank"
+  env: "Frank-env"
   bucket_name: "elasticbeanstalk-us-east-2-975845124120"
-  bucket_path: "Thistalk"
+  bucket_path: "frank"
   on:
     branch: master
   access_key_id: $AccesskeyID
