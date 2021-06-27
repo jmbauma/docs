@@ -18,6 +18,6 @@ deploy:
   bucket_name: "elasticbeanstalk-us-east-2-975845124120"
   bucket_path: "frank"
   on:
-    branch: feature
+    branch: master
   access_key_id: $AccesskeyID
   secret_access_key: $Secretaccesskey
